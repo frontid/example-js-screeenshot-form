@@ -2,7 +2,7 @@ const FORM = document.querySelector('#the-form');
 const HIDDEN_FIELD_SNAPSHOT = FORM.querySelector('input.screenshot');
 
 // Just for example purposes.
-const RESULT = document.querySelector('.result');
+const RESULT = document.querySelector('.result .inner-content');
 
 FORM.addEventListener('submit', function (e) {
   const form = this;
@@ -21,6 +21,7 @@ FORM.addEventListener('submit', function (e) {
       // Just for example purposes.
       let img = new Image();
       img.src = canvas.toDataURL();
+      RESULT.innerHTML = '';
       RESULT.appendChild(img);
 
       // Send the form to the server.

@@ -39,19 +39,33 @@ body {
     padding: 30px;
 }
 
-#the-form{
-    width: 40%;
-    float: left;
+.mdl-js-textfield {
+    width: 100%;
 }
 
-.result{
-    width: 40%;
-    float: right;
+#the-form {
+    margin-bottom: 50px;
+}
+
+.result {
     border: 12px solid grey;
     padding: 10px;
 }
 
-.result img{
+.result img {
     width: 100%;
     height: auto;
+}
+
+@media (min-width: 960px) {
+    #the-form {
+        width: 40%;
+        float: left;
+    }
+
+    .result {
+        width: 40%;
+        float: right;
+    }
+
 }
